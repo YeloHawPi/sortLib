@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include "lib/Array.h"
+#include "lib/Sort.h"
 
 int arr[50], amountNumbers;
 
