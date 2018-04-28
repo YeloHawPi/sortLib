@@ -28,7 +28,7 @@ int main(void)
 
 void sortingType()
 {
-  unsigned char select;
+  int select;
   printf("Select a sorting type\n\n[1] Bubble Sort\t [2] Selection Sort\n");
   printf("=> ");
   scanf("%d", &select);
