@@ -6,15 +6,15 @@ void bubbleSort(int array[], int amountNumbers)
 
   for (int i = 0; i < amountNumbers; i++)
     {
-      for (int i = amountNumbers - 1; i > 0; i--)
+      for (int j = amountNumbers - 1; j > 0; j--)
         {
-          left = array[i-1];
-          right = array[i];
+          left = array[j-1];
+          right = array[j];
 
           if (left > right)
             {
-              array[i] = left;
-              array[i-1] = right;
+              array[j] = left;
+              array[j-1] = right;
             }
         }
     }
@@ -40,5 +40,23 @@ void selectionSort(int array[], int amountNumbers)
       swap = array[i];
       array[i] = array[min];
       array[min] = swap;
+    }
+}
+
+void insertionSort(int array[], int amountNumbers)
+{
+  int swap;
+
+  for (int i = 0; i < amountNumbers; i++)
+    {
+    for (int j = 0; j < amountNumbers - 1; j++)
+      {
+        if (array[j] > array[j+1])
+          {
+            swap = array[j];
+            array[j] = array[j+1];
+            array[j+1] = swap;
+          }
+      }
     }
 }

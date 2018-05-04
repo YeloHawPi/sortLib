@@ -29,7 +29,7 @@ int main(void)
 void sortingType()
 {
   unsigned char select;
-  printf("Select a sorting type\n\n[1] Bubble Sort\t [2] Selection Sort\n");
+  printf("Select a sorting type\n\n[1] Bubble Sort\t [2] Selection Sort\t Insertion Sorting [3]\n");
   printf("=> ");
   scanf("%s", &select);
   printf("\n");
@@ -52,6 +52,17 @@ void sortingType()
       printf("\n");
       printf("--- After Selection Sorting ---\n");
       selectionSort(&arr[50], amountNumbers);
+      printArray(&arr[50], amountNumbers);
+      printf("\n");
+    }
+
+  if (select == '3')
+    {
+      printf("--- Before Sorting ---\n");
+      printArray(&arr[50], amountNumbers);
+      printf("\n");
+      printf("--- After Insertion Sorting ---\n");
+      insertionSort(&arr[50], amountNumbers);
       printArray(&arr[50], amountNumbers);
       printf("\n");
     }
