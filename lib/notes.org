@@ -1,6 +1,0 @@
-* Tasks
-** TODO 
-   [2018-04-3
-** TODO 
-   [2018-04-30 Пн]
-   [[file:~/%D0%94%D0%BE%D0%BA%D1%83%D0%BC%D0%B5%D0%BD%D1%82%D1%8B/Projects/C-C%2B%2B/SortLib/lib/Sort.c::swap%20%3D%20array%5Bi%5D%3B][file:~/Документы/Projects/C-C++/SortLib/lib/Sort.c::swap = array[i];]]
